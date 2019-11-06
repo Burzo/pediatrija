@@ -1,0 +1,67 @@
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+
+    @include respond(tab-port) {
+        padding: 10em 0;
+    }
+}
+
+.section-stories {
+    position: relative;
+    padding: 5rem 0;
+
+    @include respond(tab-port) {
+        padding: 10rem 0;
+    }
+}
+
+.book {
+    // Gradient lahko daš tut tkole s sliko in sta skupaj. Gradient ma prednost, ker je na prvem mestu (je na vrhu). 90deg pomeni, da gre iz leve proti desni.
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, .9) 0%,
+        rgba($color-white, .9) 50%,
+        rgba($color-secondary-light, .6) 50%,
+        rgba($color-secondary-light, .6)  100%,
+        transparent 50%
+        ), //Teli procenti pomenijo, kje se mora začet druga barva. Če je 0-50%, pomen da je gradient ubistvu med 0-50%, naprej ga ni več ampak je že solid color kjerkol je pač zbran na drugem mestu.
+    url(/images/medo_stojec600.jpg);
+
+    background-size: cover; // Its also 100% (this is WIDTH, if you put cover its HEIGHT).
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+
+    @include respond(tab-land) {
+        background-image: linear-gradient(
+            105deg,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 65%,
+            transparent 65%
+            ), //Teli procenti pomenijo, kje se mora začet druga barva. Če je 0-50%, pomen da je gradient ubistvu med 0-50%, naprej ga ni več ampak je že solid color kjerkol je pač zbran na drugem mestu.
+        url(/images/medo_stojec600.jpg);
+    }
+
+    @include respond(tab-port) {
+        background-image: linear-gradient(
+            to right,
+            rgba($color-white, .9) 0%,
+            rgba($color-white, .9) 100%
+            ), //Teli procenti pomenijo, kje se mora začet druga barva. Če je 0-50%, pomen da je gradient ubistvu med 0-50%, naprej ga ni več ampak je že solid color kjerkol je pač zbran na drugem mestu.
+        url(/images/medo_stojec600.jpg);
+    }
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+
+        @include respond(tab-land) {
+            width: 65%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+}

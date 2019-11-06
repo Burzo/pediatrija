@@ -1,0 +1,91 @@
+.story {
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba($color-black, .4);
+    background-color: rgba($color-white, .6);
+    border-radius: 3px;
+    padding: 4rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    transform: skewX(-12deg);
+
+    margin-bottom: 2rem;
+
+    @include twitchingFix;
+
+    @include respond(tab-port) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+
+    // Izbereš direct children in jih nazaj odviješ. Ne dela v tem primeru ker je že spodaj transform. Moramo manually dodat.
+    // & > * {
+    //     transform: skewX(12deg);
+    // }
+
+    &__shape {
+        // Must be floated and have a height and a width for shape-outside bellow to work.
+        width: 15rem;
+        height: 15rem;
+        float: left;
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%); // First is radius. 50% for example means 50% of the height and width of the element (in this case 7.5 rem). At 50% 50% means its positioned in the middle. It must be floated.
+
+        -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+
+        transform: translate(-3rem) skewX(12deg);
+        position: relative;
+
+        @include respond(phone) {
+            transform: translate(-3rem) skewX(0);
+        }
+        @include twitchingFix;
+    }
+
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) scale(1.4);
+        transition: all .5s;
+        @include twitchingFix;
+    }
+
+    &__text {
+        transform: skewX(12deg);
+        @include twitchingFix;
+        @include respond(phone) {
+            transform: skewX(0);
+        }
+    }
+
+    &__caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: $color-white;
+        // background-color: rgba($color-secondary-dark, 0.3);
+        border-radius: 1rem;
+        font-size: 1.7rem;
+        text-align: center;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: all .5s;
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        // filter: blur(3px) brightness(80%); BUGGED
+    }
+}
