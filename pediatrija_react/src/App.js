@@ -6,7 +6,8 @@ class App extends React.Component {
 
         return(
             <div>
-                {/* <div class="navigation">
+
+                <div class="navigation">
                     <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
                     <label for="navi-toggle" class="navigation__button">
                         <span class="navigation__icon">&nbsp;</span>
@@ -15,14 +16,13 @@ class App extends React.Component {
 
                     <nav class="navigation__nav">
                         <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Nature</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benefits</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nas</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Zaposleni</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Naročite se</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Kontakti</a></li>
                         </ul>
                     </nav>
-                </div> */}
+                </div>
 
                 <header class="header">
                     <div class="header__text-box">
@@ -124,6 +124,42 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
+
+                <section class="section-features">
+                
+                <div class="row flex">
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-map"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Naslov</h3>
+                        <p class="feature-box__text">
+                        <p>Borštnikova ulica 79</p>
+                        <p>2000 Maribor</p>
+                        <p>Slovenija</p>
+                        </p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-smartphone"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Telefon</h3>
+                        <p class="feature-box__text">
+                        <p>Telefon: 	(02) 429 02 22</p>
+                        <p>Faks: 	(02) 429 02 23</p>
+                        <p>Številka prenosnega telefona: 	(041) 502 220</p>
+                        </p>
+                    </div>
+                    <div class="feature-box">
+                        <i class="feature-box__icon icon-basic-sheet-pen"></i>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Informacije</h3>
+                        <p class="feature-box__text">
+                        <p>Matična: 1798146000</p>
+                        <p>Davčna: SI33471142</p>
+                        <p>TRR IBAN SI56 2900 0005 5378 612 (UniCredit Banka)</p>
+                        </p>
+                    </div>
+                    <div class="feature-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.635871001059!2d15.62630821579361!3d46.53510686936774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f7785d3934241%3A0x1d94d0f6f2feae1a!2sBor%C5%A1tnikova%20ulica%2079%2C%202000%20Maribor!5e0!3m2!1sen!2ssi!4v1573128292102!5m2!1sen!2ssi" width="600" height="450" frameborder="0" style={{border: 0}} allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </section>
 
             </div>
         )

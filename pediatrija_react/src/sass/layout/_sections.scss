@@ -3,7 +3,16 @@
     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 
     @include respond(tab-port) {
-        padding: 10em 0;
+        padding: 5em 0;
+    }
+}
+
+.section-features {
+    padding: 15rem 0;
+    // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+
+    @include respond(tab-port) {
+        padding: 5em 0;
     }
 }
 
@@ -12,7 +21,7 @@
     padding: 5rem 0;
 
     @include respond(tab-port) {
-        padding: 10rem 0;
+        padding: 2rem 0;
     }
 }
 

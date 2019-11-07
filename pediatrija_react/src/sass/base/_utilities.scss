@@ -20,3 +20,13 @@
 .u-margin-top-huge { margin-top: 10rem !important; }
 
 .u-padding-top-small { padding-top: .5rem !important; }
+
+.flex {
+    display: flex;
+
+    & > * {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+}

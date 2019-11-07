@@ -1,33 +1,38 @@
 .feature-box {
-
-    
     height: 30.5rem;
+    width: 40rem;
 
-    background-color: rgba($color-white, .8);
-    font-size: 1.5rem;
-    padding: 2.5rem;
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
+    font-size: 1.3rem;
+    padding: 1.5rem;
     text-align: center;
     border-radius: 1.5rem;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-
+    color: $color-white;
     transition: transform .3s;
 
-    &:hover {
-        background-color: rgba($color-white, 1);
-        transform: translateY(-1.5rem) scale(1.03);
-    }
+    // &:hover {
+    //     background-color: rgba($color-white, 1);
+    //     transform: translateY(-1.5rem) scale(1.03);
+    // }
 
     &__icon {
-        font-size: 6rem; // Icon is basically font, thats why we control its size this way.
+        font-size: 4rem; // Icon is basically font, thats why we control its size this way.
         margin-bottom: .5rem;
-        padding-top: 0.2rem;
+        padding: 10.9rem 0.5rem;
 
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        // background-image: linear-gradient(to right, $color-secondary-light, $color-secondary-dark);
+        background-color: $color-white;
 
         background-clip: text;
         -webkit-background-clip: text;
         -moz-background-clip: text;
     
         color: transparent;
+    }
+
+    &__text {
+        text-align: left;
+        display: block;
     }
 }
