@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.scss';
+import Table from "./components/Table"
 
 class App extends React.Component {
     render() {
@@ -155,10 +156,20 @@ class App extends React.Component {
                         <p>TRR IBAN SI56 2900 0005 5378 612 (UniCredit Banka)</p>
                         </p>
                     </div>
-                    <div class="feature-box__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.635871001059!2d15.62630821579361!3d46.53510686936774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f7785d3934241%3A0x1d94d0f6f2feae1a!2sBor%C5%A1tnikova%20ulica%2079%2C%202000%20Maribor!5e0!3m2!1sen!2ssi!4v1573128292102!5m2!1sen!2ssi" frameBorder="0" allowfullscreen=""></iframe>
+                </div>
+                <div class="row">
+                    <div class="feature-box--map">
+                        <div class="feature-box__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2744.635871001059!2d15.62630821579361!3d46.53510686936774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f7785d3934241%3A0x1d94d0f6f2feae1a!2sBor%C5%A1tnikova%20ulica%2079%2C%202000%20Maribor!5e0!3m2!1sen!2ssi!4v1573128292102!5m2!1sen!2ssi" width="600" height="450" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <section class="section-pricing">
+            <div class="row">
+            <Table/>
+            </div>
             </section>
 
             </div>

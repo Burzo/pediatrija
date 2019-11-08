@@ -23,10 +23,17 @@
 
 .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
 
     & > * {
         &:not(:last-child) {
             margin-right: 2rem;
+
+            @include respond(phone) {
+                margin-right: 0.5rem;
+            }
         }
     }
 }

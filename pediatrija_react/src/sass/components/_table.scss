@@ -1,0 +1,12 @@
+.pricing-table {
+
+
+    & tr {
+        border-bottom: 2px dotted $color-grey-dark;
+    }
+
+    &--title {
+        font-weight: 800;
+        border-bottom: none;
+    }
+}
