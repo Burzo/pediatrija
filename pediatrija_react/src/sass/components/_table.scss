@@ -1,12 +1,45 @@
 .pricing-table {
+    border-collapse: separate;
+    border: 1rem solid $color-secondary-light;
+    border-radius: 1rem;
+    background-color: $color-white;
+    margin: 0 auto;
 
+    transition: all 1s;
+    tr {
+        border: none;
+        border-bottom: 1px solid $color-grey-dark-2;
 
-    & tr {
-        border-bottom: 2px dotted $color-grey-dark;
+        &:hover:not(:first-child) {
+            background-color: $color-secondary-dark;
+            color: $color-white;
+            font-weight: 700;
+        }
     }
 
-    &--title {
+    th {
+        border: none;
+        border-bottom: 1px solid $color-grey-dark-2;
         font-weight: 800;
-        border-bottom: none;
+        
+        &:nth-child(2) {
+            text-align: center;
+            border-left: 1px solid $color-grey-light-3;
+        }
+    }
+
+    td {
+        &:nth-child(2) {
+            width: 20%;
+            border-left: 1px solid $color-grey-light-3;
+            th {
+                text-align: center;
+            }
+        }
+    }
+
+    td, th {
+        border-bottom: 1px solid $color-grey-light-3;
+        padding: 1rem;
     }
 }

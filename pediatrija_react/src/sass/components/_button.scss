@@ -1,4 +1,4 @@
-.btn {
+.mybtn {
     &, // Change for the <button> element
     &:link,
     &:visited {
@@ -66,6 +66,13 @@
     &--orange {
         background-color: $color-secondary-dark;
         color: $color-white;
+
+        
+        text-align: center;
+
+        &:hover, &:active, &:focus {
+            color: $color-white;
+        }
 
         &::after {
             background-color: $color-secondary-dark;

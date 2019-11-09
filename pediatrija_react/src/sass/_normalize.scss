@@ -347,3 +347,7 @@
   [hidden] {
     display: none;
   }
+
+  a:focus, a:hover {
+    color: inherit;
+  }

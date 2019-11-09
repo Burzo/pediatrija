@@ -2,16 +2,18 @@ import React from "react"
 
 const Table = (props) => {
     return (
-        <div>
+        <div class="flex-column-wrap">
+        <div class="flex w-100">
+        <a href="#samoplacniki" class="mybtn mybtn--orange" data-toggle="collapse">Cenik storitev</a>
+        <a href="#laboratorij" class="mybtn mybtn--orange" data-toggle="collapse">Cenik lab. storitev</a>
+        <a href="#pregled" class="mybtn mybtn--orange" data-toggle="collapse">Cenik pregledov</a>
+        </div>
+        <div id="samoplacniki" class="collapse">
         <table class="pricing-table">
-        <thead>
-            <tr>
-                <td class="pricing-table--title">
-                    CENIK STORITEV ZA SAMOPLAČNIKE V  EUR
-                </td>
-            </tr>
-        </thead>
-        <tbody>
+        <tr>
+            <th class="heading-tertiary">Cenik storitev za samoplačnike</th>
+            <th>Cene v €</th>
+        </tr>
         <tr>
         <td>Prvi preventivni ali kurativni pregled</td>
         <td>45,00</td>
@@ -52,16 +54,14 @@ const Table = (props) => {
         <td>                      - prevez rane</td>
         <td>10,00 do 20,00</td>
         </tr>
-        </tbody>
         </table>
-
+        </div>
+        <div id="laboratorij" class="collapse">
         <table class="pricing-table">
-            <thead class="pricing-table--title">
-                <tr>
-                    <td>Laboratorijske storitve:</td>
-                </tr>
-            </thead>
-        <tbody>
+        <tr>
+            <th class="heading-tertiary">Laboratorijske storitve</th>
+            <th>Cene v €</th>
+        </tr>
         <tr>
         <td>KKS (hemogram)</td>
         <td>10,00</td>
@@ -102,16 +102,15 @@ const Table = (props) => {
         <td>Paket Medo za dva otroka</td>
         <td>55,00</td>
         </tr>
-        </tbody>
         </table>
+        </div>
 
+        <div id="pregled" class="collapse">
         <table class="pricing-table">
-            <thead class="pricing-table--title">
-                <tr>
-                    <td>Pregled pred cepljenjem in cepljenje (občasno veljajo akcijske cene):</td>
-                </tr>
-            </thead>
-        <tbody>
+        <tr>
+            <th class="heading-tertiary">Pregleh pred cepljenjem in cepljenje (občasno veljajo akcijske cene)</th>
+            <th>Cene v €</th>
+        </tr>
         <tr>
         <td>KME otrok (s popustom)</td>
         <td>30,00 (25,00)</td>
@@ -179,13 +178,13 @@ const Table = (props) => {
         <p>format A3 1 stran </p>
         </td>
         <td>
-            <p>&nbsp;</p>
+        <p>&nbsp;</p>
         <p>0,10 EUR</p>
         <p>0,15 EUR</p>
         </td>
         </tr>
-        </tbody>
         </table>
+        </div>
         <p>Cena storitve opravljene, na željo ali zahtevo naročnika, v nočnem času med 20 in 7 uro ter ob vikendih in praznikih se poviša za 50%. Nismo zavezanec za obračun in plačilo davka na dodano vrednost.</p>
         </div>
     )
