@@ -178,6 +178,140 @@ class App extends React.Component {
             </div>
             </section>
 
+            <section class="section-delo">
+            <div class="u-center-text u-margin-bottom-small">
+                <h2 class="heading-secondary">
+                Delovni čas ordinacije
+                </h2>
+            </div>
+
+            <div class="row">
+                <ul class="list-group normalflex">
+                <div href="#" class="delo__text w-20 list-group-item list-group-item-action orange-card flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Ponedeljek</h5>
+                    </div>
+                    <p class="mb-1">Od 7.30 do 13.30 sprejem do 13.00.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                <div href="#" class="delo__text w-20 list-group-item list-group-item-action orange-card flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Torek</h5>
+                    </div>
+                    <p class="mb-1">Od 13.00 do 20.00 sprejem do 19.30.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                <div href="#" class="delo__text w-20 list-group-item list-group-item-action orange-card flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Sreda</h5>
+                    </div>
+                    <p class="mb-1">Od 9.30 do 13.00 sprejem do 12.30 in 14.00 do 18.30 - preventiva.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                <div href="#" class="delo__text w-20 list-group-item list-group-item-action orange-card flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Četrtek</h5>
+                    </div>
+                    <p class="mb-1">Od 7.30 do 13.30 sprejem do 13.00.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                <div href="#" class="delo__text w-20 list-group-item list-group-item-action orange-card flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Petek</h5>
+                    </div>
+                    <p class="mb-1">Od 7.30 do 13.00 sprejem do 12.30.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="u-center-text u-margin-bottom-small">
+                    <h2 class="heading-secondary">
+                    Naročanje
+                    </h2>
+                </div>
+                <div class="delo__text">
+                Po telefonu 02/4290222 in 041/502220 v ponedeljek, četrtek in petek od 8.00 do 12.30, v torek od 12.45 do 18.00 in v sredo od 9.15 do 12.45. V sredo popoldan telefona ne dvigujemo, zaradi nemotenega poteka dela v otroški posvetovalnici, kjer so dojenči naročeni vnaprej. Naročanje po pošti P.B., d.o.o., Borštnikova ulica 79, 2000 Maribor zaradi zamudnosti odsvetujemo. Naročanje preko e-maila: info@pediatrija.si  ni učinkovito, ker mailov ne beremo vsako uro.
+                </div>
+            </div>
+            <div class="row">
+                <div class="u-center-text u-margin-bottom-small">
+                    <h2 class="heading-secondary">
+                    Nadomeščanja
+                    </h2>
+                </div>
+                <div class="delo__text">
+                V primeru, ko je ordinacija zaprta, le v nujnih primerih pomoč poiščete:
+                </div>
+                <div class="row">
+                <ul class="list-group">
+                <div href="#" class="delo__text list-group-item list-group-item-action inforcard flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Ponedeljek</h5>
+                    </div>
+                    <p class="mb-1">Ordinacija Sabine Rozman-Golčar, dr. med. spec. pediatrije v zdravstveni postaji v Rušah, Tovarniška c. 51 tel.: 02/609-0091 ali (v času dopustov tudi v četrtek do 17.00 ure) v ordinaciji Barbare Dietner-Merkan, dr. med. spec. pediatrije na Teznu, Zagrebška 103. tel.: 08/205-7530.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                {/* <div href="#" class="delo__text w-20 list-group-item list-group-item-action inforcard flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Torek</h5>
+                    </div>
+                    <p class="mb-1">Od 13.00 do 20.00 sprejem do 19.30.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div> */}
+                <div href="#" class="delo__text list-group-item list-group-item-action inforcard flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Sreda</h5>
+                    </div>
+                    <p class="mb-1">Na Kalohovi 18 na Studencih v ordinaciji dr. Andreje Krebs, dr. med. spec. pediatrije tel.: 420 18 87 ali (v času dopustov tudi v torek do 17.00) v ordinaciji Branke Kvas-Kučič, dr. med. spec. šolske med. v ambulanti na Teznu, Zagrebška 103. tel.: 08 205 7570.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                {/* <div href="#" class="delo__text list-group-item list-group-item-action inforcard flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Četrtek</h5>
+                    </div>
+                    <p class="mb-1">Od 7.30 do 13.30 sprejem do 13.00.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div> */}
+                <div href="#" class="delo__text list-group-item list-group-item-action inforcard flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1 delo__heading">Petek</h5>
+                    </div>
+                    <p class="mb-1">Za nujne primere deluje od 14.00 do 18.00 ure eden od pediatrov koncesionarjev, ki delamo v Mariboru, Rušah, Šentilju in Lenartu po razporedu v nadaljevanju. Kontakti in naslovi vsakega od kolegov so navedeni na koncu te strani. Veljavni razpored je: 4.10.2019. Igor Dovnik, 11.10.2019 Barbara Dietner Merkan, 18.10.2019 Mojca Švab Zavratnik, 25.10.2019 Matjaž Homšak, 8.11.2019 Mojca Ivankovič-Kacjan, 15.11.2019 Branka Kvas Kučič, 22.11.2019 Andreja Krebs, 29.11.2019 Sabina Rozman Golčar, 6.12.2019 Suzana Škorjanc Antolič, 13.12.2019 Mojca Švab Zavratnik, 20.11.2019 Bernarda Vogrin, 27.12.2019 Sabina Rozman Golčar, 3.1.2020 Barbara Dietner Merkan, 10.1.2020 Matjaž Homšak, 17.1.2020 Mojca Ivankovič Kacijan, 24.1.2020 Branka Kvas Kučič, 31.1.2020 Andreja Krebs, 7.2.2020 Igor Dovnik, 14.2.2020 Suzana Škorjanc Antolič, 21.2.2020 Mojca Švab Zavratnik, 28.2.2020 Bernarda Vogrin.</p>
+                    <small>Donec id elit non mi porta.</small>
+                </div>
+                </ul>
+            </div>
+            </div>
+v ponedeljek popoldan v ordinaciji Sabine Rozman-Golčar, dr. med. spec. pediatrije v zdravstveni postaji v Rušah, Tovarniška c. 51 tel.: 02/609-0091 ali
+v ponedeljek popoldan (v času dopustov tudi v četrtek do 17.00 ure) v ordinaciji Barbare Dietner-Merkan, dr. med. spec. pediatrije na Teznu, Zagrebška 103. tel.: 08/205-7530
+v sredo popoldan na Kalohovi 18 na Studencih v ordinaciji dr. Andreje Krebs, dr. med. spec. pediatrije tel.: 420 18 87 ali
+v sredo popoldan (v času dopustov tudi v torek do 17.00) v ordinaciji Branke Kvas-Kučič, dr. med. spec. šolske med. v ambulanti na Teznu, Zagrebška 103. tel.: 08 205 7570,
+v petek popoldan za nujne primere deluje od 14.00 do 18.00 ure eden od pediatrov koncesionarjev, ki delamo v Mariboru, Rušah, Šentilju in Lenartu po razporedu v nadaljevanju. Kontakti in naslovi vsakega od kolegov so navedeni na koncu te strani. Veljavni razpored je: 4.10.2019. Igor Dovnik, 11.10.2019 Barbara Dietner Merkan, 18.10.2019 Mojca Švab Zavratnik, 25.10.2019 Matjaž Homšak, 8.11.2019 Mojca Ivankovič-Kacjan, 15.11.2019 Branka Kvas Kučič, 22.11.2019 Andreja Krebs, 29.11.2019 Sabina Rozman Golčar, 6.12.2019 Suzana Škorjanc Antolič, 13.12.2019 Mojca Švab Zavratnik, 20.11.2019 Bernarda Vogrin, 27.12.2019 Sabina Rozman Golčar, 3.1.2020 Barbara Dietner Merkan, 10.1.2020 Matjaž Homšak, 17.1.2020 Mojca Ivankovič Kacijan, 24.1.2020 Branka Kvas Kučič, 31.1.2020 Andreja Krebs, 7.2.2020 Igor Dovnik, 14.2.2020 Suzana Škorjanc Antolič, 21.2.2020 Mojca Švab Zavratnik, 28.2.2020 Bernarda Vogrin
+v soboto, ob nedeljah in praznikih med 8.00 in 23.00 ter vsak delovnik med 20.00 in 23.00 uro dela v ZD dr.A. Drolca Maribor v Vošnjakovi ulici za nujne primere dežurna pediatrična služba tel.: 228 64 29
+vsak dan med 23.00 in 7.00 nujne primere obravnava urgentna ambulanta, ki deluje v mariborskem UKC v pritličju prizidka kirurške stolpnice.
+Andreja Krebs, dr. med. specialistka pediatrije, Studenci, Kalohova 18, telefon: 02/4201887.  Spletna stran:www.pediatrija.krebs.si
+
+Suzana Škorjanc Antolič, dr. med. specialistka pediatrije, Studenci, Hrenova 6, 2000 Maribor, telefon: 02/429 0911, spletna stran: www.pediatrinjasuzana.si
+
+ Branka Kvas Kučič, dr. med., specialistka šolske medicine, Zagrebška cesta 103, 2000 Maribor, telefon:08 205 75 70, E pošta: www.zdravniki-zobozdravniki.net/Clan/Branka-KVAS-KUCIC-1226
+
+ Barbara Dietner Merkan, dr. med. specialistka pediatrije, Zagrebška cesta 103, 2000 Maribor, telefon: 08 205 75 30, spletna stran: www.pediatrija-tezno.si
+
+ Sabina Rozman Golčar, dr. med. specialistka pediatrije, Stadionska ul.4, 2342 Ruše, tel.: 02/609 0091, spletna stran: https://sabinarozman.wordpress.com
+
+ Mojca Švab Zavratnik, dr. med. specialistka pediatrije, Pod hribom 14, 2212 Šentilj v Slovenskih goricah, telefon: 08 200 26 65, spletna stran: www.pediatrija-sentilj.si
+
+ Bernarda Vogrin, dr. med. specialistka pediatrije, Maistrova 22, 2230 Lenart v Slovenskih goricah, telefon: 02 729 18 41, spletna stran: www.zdravniki-zobozdravniki.net/Clan/Bernarda-VOGRIN-1111
+
+ asist. dr. Matjaž Homšak, dr. med., specialist pediater, Maistrova ulica 22, 2230 Lenart v Slovenskih goricah, telefon: 02 729 18 33 in 02 729 18 42, spletna stran: www.zdravniki-zobozdravniki.net/Clan/Matjaz-HOMSAK-1446
+
+ Mojca Ivankovič Kacjan, dr. med. specialistka pediatrije, Maistrova 22, 2230 Lenart v Slovenskih Goricah, telefon: 02 729 18 27, spletna stran: www.zdravniki-zobozdravniki.net/Clan/Mojca-IVANKOVIC-KACJAN-1486
+
+ 
+            </section>
+
+
             <footer class="footer">
             <div class="footer__logo-box">
 
@@ -186,9 +320,6 @@ class App extends React.Component {
                             media="(max-width: 37.5em)" />
                     <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png" />
                 </picture>
-
-
-                
             </div>
             <div class="row">
                 <div class="col-1-of-2">
