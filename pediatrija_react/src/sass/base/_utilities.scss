@@ -74,6 +74,8 @@
 
 .delo__text {
     font-size: 1.6rem;
+    text-align: center;
+    margin: 1rem;
 }
 
 .delo__heading {
@@ -85,6 +87,10 @@
     border-radius: 10px;
 }
 
+.list-group-item:last-child {
+    margin: 1rem;
+}
+
 .orange-card {
     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     color: $color-white;
@@ -94,5 +100,4 @@
     // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     // color: $color-white;
     margin: 1rem;
-    
 }
