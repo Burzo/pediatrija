@@ -60,6 +60,18 @@
 
 .normalflex {
     display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    // @include respond(tab-port) {
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-items: center;
+    }
 
     & > * {
         &:not(:last-child) {
@@ -94,6 +106,14 @@
 .orange-card {
     background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     color: $color-white;
+
+    // @include respond(tab-port) {
+    //     width: 50%;
+    // }
+
+    @include respond(phone) {
+        width: 80%;
+    }
 }
 
 .inforcard {
