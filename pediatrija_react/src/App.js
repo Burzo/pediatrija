@@ -2,7 +2,16 @@ import React from 'react';
 import './App.scss';
 import Table from "./components/Table"
 
+
 class App extends React.Component {
+
+    uncheck = () => {
+        let checkbox = document.getElementById("navi-toggle")
+        if (checkbox) {
+            checkbox.checked = false
+        }
+    }
+
     render() {
 
         return(
@@ -16,11 +25,12 @@ class App extends React.Component {
                     <div class="navigation__background">&nbsp;</div>
 
                     <nav class="navigation__nav">
-                        <ul class="navigation__list">
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>O nas</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Zaposleni</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Naročite se</a></li>
-                            <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Kontakti</a></li>
+                        <ul onClick={this.uncheck()} class="navigation__list">
+                            <li class="navigation__item"><a onClick={this.uncheck} href="#zaposleni" class="navigation__link"><span>01</span>Zaposleni</a></li>
+                            <li class="navigation__item"><a onClick={this.uncheck} href="#narocitese" class="navigation__link"><span>02</span>Naročite se</a></li>
+                            <li class="navigation__item"><a onClick={this.uncheck} href="#cena" class="navigation__link"><span>04</span>Cenik storitev</a></li>
+                            <li class="navigation__item"><a onClick={this.uncheck} href="#delo" class="navigation__link"><span>04</span>Delovni čas in nadomeščanja</a></li>
+                            <li class="navigation__item"><a onClick={this.uncheck} href="#kontakti" class="navigation__link"><span>03</span>O nas</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -41,7 +51,7 @@ class App extends React.Component {
                         <a href="#" class="mybtn mybtn--white mybtn--animated">Naročite se</a>
                     </div>
                 </header>
-
+                <a href="#" name="zaposleni"></a>
                 <section class="section-stories">
 
                     <div class="u-center-text u-margin-bottom-small">
@@ -84,7 +94,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
-
+                <a href="#" name="narocitese"></a>
                 <section class="section-book">
                     <div class="row">
                         <div class="book">
@@ -125,7 +135,7 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
-
+                <a href="#" name="cena"></a>
             <section class="section-pricing">
             <div class="u-center-text u-margin-bottom-small">
                 <h2 class="heading-secondary">
@@ -136,7 +146,7 @@ class App extends React.Component {
             <Table/>
             </div>
             </section>
-
+            <a href="#" name="delo"></a>
             <section class="section-delo">
             <div class="u-center-text u-margin-bottom-small">
                 <h2 class="heading-secondary">
@@ -195,7 +205,7 @@ class App extends React.Component {
                     </h2>
                 </div>
                 <div class="delo__text">
-                Če je ordinacija zaprta, le v nujnih primerih pomoč poiščete pomoč:
+                Če je ordinacija zaprta, le v nujnih primerih poiščete pomoč:
                 </div>
                 <div class="row">
                     <div class="flex">
