@@ -12,7 +12,16 @@
     transition: transform .3s;
 
     @include respond(phone) {
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        border-radius: unset;
+
         & > h3 {
+            margin: 0 0;
+        }
+
+        p {
             margin: 0 0;
         }
     }
@@ -41,7 +50,7 @@
     &--map {
         // height: 30.5rem;
         width: 50%;
-        margin: 0 auto;
+        margin: 3.5rem auto;
 
         font-size: 1.3rem;
         padding: 1.5rem;

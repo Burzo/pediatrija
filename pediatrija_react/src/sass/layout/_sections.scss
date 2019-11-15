@@ -5,27 +5,41 @@
     @include respond(tab-port) {
         padding: 5em 0;
     }
+    @include respond(phone) {
+        padding: 3em 0;
+    }
 }
 
 .section-features {
     padding: 5rem 0;
     // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-
     @include respond(tab-port) {
         padding: 5em 0;
+    }
+    @include respond(phone) {
+        padding: 3em 0;
     }
 }
 
 .section-stories {
     position: relative;
     padding: 5rem 0;
-
     @include respond(tab-port) {
-        padding: 2rem 0;
+        padding: 5em 0;
+    }
+    @include respond(phone) {
+        padding: 3rem 0;
     }
 }
 
 .section-pricing {
+    padding: 3rem 0;
+    @include respond(tab-port) {
+        padding: 3em 0;
+    }
+    @include respond(phone) {
+        padding: 3rem 0;
+    }
     // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
 }
 

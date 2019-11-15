@@ -108,6 +108,9 @@
     //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
+        @include respond(phone) {
+            transform: scale(30);
+        }
     }
 
     &__checkbox:checked ~ &__nav > &__list > &__item > &__link {

@@ -10,6 +10,7 @@ const Table = (props) => {
         </div>
 
         <div id="cenik" class="collapse">
+        <div class="flex-column-wrap">
         <p class="pricing-table__disclaimer">Cena storitve opravljene, na željo ali zahtevo naročnika, v nočnem času med 20 in 7 uro ter ob vikendih in praznikih se poviša za 50%. Nismo zavezanec za obračun in plačilo davka na dodano vrednost.</p>
         <table class="pricing-table">
         <tr>
@@ -181,6 +182,7 @@ const Table = (props) => {
         <td>10,00 do 20,00</td>
         </tr>
         </table>
+        </div>
         </div>
         </div>
     )
