@@ -101,6 +101,7 @@
 
 .list-group-item:last-child {
     margin: 1rem;
+    border-radius: 10px;
 }
 
 .orange-card {
@@ -120,4 +121,5 @@
     // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
     // color: $color-white;
     margin: 1rem;
+    border: 2px solid $color-secondary-light;
 }
